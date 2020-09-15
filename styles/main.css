@@ -67,6 +67,7 @@ span{
 .choose-us.title h3{
     text-transform: uppercase;
     font-size: 2rem;
+    margin: 7px;
     color: var(--primary);
 }
 
@@ -103,7 +104,6 @@ span{
 
 .localization{
     height: 500px;
-    text-align: left;
     background-color: var(--gray-dark);
     margin: 20px auto;
     display: grid;
@@ -155,4 +155,21 @@ span{
 
 .localization span{
     display: block;
+}
+
+@media (max-width: 891px) {
+    .localization{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .find-us{
+        align-self: center;
+    }
 }
