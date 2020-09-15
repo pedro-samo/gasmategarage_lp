@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+i{
+    margin: 0 6px;
+}
+
+/* --NAV BAR --- */
+
+.collpase, .navbar-toggler, .navbar{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* -- CAROUSEL -- */
+
+
+.container-fluid{
+    padding: 0;
+}
+
+#carousel .carousel-inner, #mainSlider .carousel-item{
+    height: 70vh;
+}
+
+#carousel .carousel-caption{
+    top: 15%;
+}
+
+.logo{
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+#carousel .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: -2px 3px 4px #000000;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+
+    #carousel .carousel-caption{
+        top: 60%;
+    }
+    
+    .logo{
+        margin: 0 auto;
+        max-width: 200px;
+    }
+    
+    #carousel .carousel-caption h2{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 690px) {
+    #carousel .carousel-caption{
+        top: 10%;
+    }
+
+    #carousel .carousel-caption h2 {
+
+    margin-bottom: -50px;
+}
+
+}
