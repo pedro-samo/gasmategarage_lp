@@ -44,23 +44,42 @@ span{
 }
 
 
-/* CAROUSEL */
+/* IMAGE TITLE */
 
-#carousel .carousel-inner, #mainSlider .carousel-item{
-    max-height: 700px;
+.container-fluid{
+    padding: 0;
 }
 
-.logo{
-    max-width: 500px;
-    margin: 0 auto;
+.title-image{
+    background-image: url(/imgs/carousel1.png);
+    background-position: center;
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#carousel .carousel-caption h2{
-    font-size: 50px;
+.title-image img{
+    max-width: 70%;
+}
+
+.title-image h2{
+    text-align: center;
+    line-height: 3rem;
+    margin: 5px 10px;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
-    text-shadow: -2px 3px 4px #000000;
+    font-size: 3rem;
+    color: var(--light);
+    background-color: var(--primary);
+    padding: 3px 5px;
 }
+
+
+
+
 
 /* CHOOSE US */
 
@@ -135,20 +154,20 @@ span{
 }
 
 .adress{
-    margin-top: 10px;
+    margin-top: 5px;
     grid-column: 5 / 7;
     grid-row: 2 /3;
 }
 
 .phone{
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 10px;
     grid-column: 5 / 7;
     grid-row: 3/4;
 }
 
 .hour{
-    margin-top: 10px;
+    margin-top: 5px;
     grid-column: 5 / 7;
     grid-row:4/5 ;
 }
