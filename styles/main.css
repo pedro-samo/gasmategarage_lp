@@ -62,7 +62,7 @@ span{
 }
 
 .title-image img{
-    max-width: 70%;
+    max-width: 20%;
 }
 
 .title-image h2{
@@ -74,14 +74,21 @@ span{
     font-size: 3rem;
     color: var(--light);
     background-color: var(--primary);
-    padding: 3px 5px;
+    padding: 10px 20px;
 }
 
 @media only screen and (max-width: 600px) {
      .title-image{
     background-image: url(/imgs/carousel1.png);
     background-position: center;
-    height: 100vh;
+    height: 80vh;
+    }
+
+    .title-image h2{
+        margin: 5px 50px;
+        padding: 5px;
+        font-size: 3rem;
+        padding: 0;
     }
   }
 
@@ -211,18 +218,13 @@ span{
 /* BRANDS SERVICED */
 
 .serviced{
-    padding: 40px 0;
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    align-items: center;
+    flex-direction: column;
 }
 
 .serviced div{
-    margin: 20px;
-}
-
-.serviced-photo{
-    max-width: 100%;
+    margin: 10px;
 }
 
 .car-brands{
@@ -239,49 +241,49 @@ span{
     margin: 10px;
 }
 
-.car-brands.brands{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    text-align: left;
-}
-
 .car-brands.brands i{
     color: var(--primary);
 }
 
+.car-brands.brands{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
 .car-brands.brands div{
-    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
 }
 
-.car-brands.brands span{
-    display: block;
-    white-space: nowrap;
-}
+@media (min-width: 890px) {
 
-@media (max-width: 890px) {
     .serviced{
+        margin: 40px auto;
         display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .serviced-photo{
-        margin: 0;
-        max-width: 100%;
+        align-items: center;
+        flex-direction:row;
     }
 
-    .serviced-photo img{
-        width: 100%;
-    }
-    
     .car-brands{
-        flex-direction: column;
+        margin-left: 40px;
     }
-    
+
     .car-brands.brands{
-        flex-direction: column;
-    }
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
     
+    }
+
 }
+
+
+
 
