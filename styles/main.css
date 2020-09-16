@@ -6,8 +6,9 @@ i{
     margin: 0 6px;
 }
 
-h1, h2, h3{
+h1, h2, h, h4{
     margin: 0;
+    font-weight: 300;
 }
 
 body{
@@ -16,7 +17,10 @@ body{
 }
 
 p{
-    font-weight: 400;
+
+    color: var(--gray); 
+    font-weight: 300;
+    font-size: 1.2rem;
 }
 
 iframe{
@@ -24,7 +28,8 @@ iframe{
 }
 
 span{
-    font-size: 1.2rem;
+    font-weight: 300;
+    font-size: 1.2rem;;
     color: var(--gray);
   }
 
@@ -67,13 +72,9 @@ span{
 .choose-us.title h3{
     text-transform: uppercase;
     font-size: 2rem;
-    margin: 7px;
+    font-weight: 300;
+    margin: 10px;
     color: var(--primary);
-}
-
-.choose-us p{
-    color: var(--gray);
-    font-size: 1.3rem;
 }
 
 .choose-us img{
@@ -83,6 +84,7 @@ span{
 .choose-us.body{
     margin-top: -50px;
     flex-grow: 1;
+    font-weight: 300;
     display: flex;
     flex-direction: row;
 }
@@ -104,14 +106,15 @@ span{
 
 .localization{
     height: 500px;
-    background-color: var(--gray-dark);
+    font-weight: 300;
+    background-color: rgb(243, 243, 243);
     margin: 20px auto;
     display: grid;
     grid-template-columns:repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto;
     justify-items: center;
     text-align: center;
-    align-items: flex-end;
+    align-items: flex-start;
     row-gap: 10px;
 }
 
@@ -121,7 +124,7 @@ span{
 }
 
 .find-us{
-    margin: 0;
+    margin-top: 10px;
     font-size: 2rem;
     text-transform: uppercase;
     color: var(--primary);
@@ -132,23 +135,27 @@ span{
 }
 
 .adress{
+    margin-top: 10px;
     grid-column: 5 / 7;
-    grid-row: 2 / 3;
+    grid-row: 2 /3;
 }
 
 .phone{
+    margin-top: 10px;
     gap: 10px;
     grid-column: 5 / 7;
-    grid-row: 3 / 4;
+    grid-row: 3/4;
 }
 
 .hour{
+    margin-top: 10px;
     grid-column: 5 / 7;
-    grid-row: 4/5 ;
+    grid-row:4/5 ;
 }
 
 .localization i{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 10px 0;
     display: block;
     color: var(--primary);
 }
@@ -157,7 +164,7 @@ span{
     display: block;
 }
 
-@media (max-width: 891px) {
+@media (max-width: 890px) {
     .localization{
         height: auto;
         display: flex;
@@ -171,5 +178,67 @@ span{
 
     .find-us{
         align-self: center;
+    }
+}
+
+
+/* BRANDS SERVICED */
+
+.serviced{
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.serviced div{
+    margin: 20px;
+}
+
+.serviced-photo{
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.car-brands{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.car-brands h2{
+    text-transform: uppercase;
+    color: var(--primary);
+    margin: 10px;
+}
+
+
+.car-brands.brands{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.car-brands.brands i{
+    color: var(--primary);
+}
+
+.car-brands.brands div{
+    margin: 0 15px;
+}
+
+.car-brands.brands span{
+    display: block;
+    white-space: nowrap;
+}
+
+@media (max-width: 890px){
+    .serviced{
+        padding: 20px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
     }
 }
