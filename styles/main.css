@@ -175,7 +175,7 @@ span{
     height: 500px;
     font-weight: 300;
     background-color: rgb(243, 243, 243);
-    margin: 20px auto;
+    margin: 20px auto 0;
     display: grid;
     grid-template-columns:repeat(6, 1fr);
     grid-template-rows: auto;
@@ -236,7 +236,7 @@ span{
         height: auto;
         display: flex;
         flex-direction: column;
-        margin: 20px auto;
+        margin: 20px auto 0;
         justify-items: center;
         text-align: center;
         align-items: center;
@@ -253,7 +253,7 @@ span{
 
 .serviced.container-sm{
     padding: 0;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 .serviced{
@@ -271,7 +271,8 @@ span{
 }
 
 .car-brands{
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -307,9 +308,8 @@ span{
 
 @media (min-width: 890px) {
 
-
-
-    .serviced{
+    .serviced.serviced.container-sm{
+        padding: 10px;
         margin: 40px auto;
         display: flex;
         align-items: center;
@@ -342,6 +342,7 @@ span{
 
 .services{
     margin: 20px auto;
+    padding: 10px;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -349,6 +350,7 @@ span{
 }
 
 .services h2{
+    padding: 10px;
     margin-top: 20px;
 }
 
@@ -388,6 +390,11 @@ span{
 
 @media (min-width: 890px) {
 
+    .services{
+        margin: 0px auto;
+        padding: 0;
+    }
+
     .services h2{
         margin: 20px;
     }
@@ -416,7 +423,8 @@ span{
 
 
 .feedbacks{
-    padding: 0;
+    padding: 0 10px;
+    overflow: hidden;
     height: 300px;
     width: 100%;
     background-image: url(/imgs/feedbacks.png);
@@ -449,6 +457,15 @@ span{
 
 @media (min-width: 890px) {
 
+    .feedbacks.container-fluid{
+        padding: 0 20px;
+        margin: 20px auto;
+    }
+    
+    .carousel-item{
+        margin: 50px auto;
+    }
+
     .feedbacks i{
         display: block;
         color: var(--light);
@@ -457,9 +474,76 @@ span{
     
     .feedbacks p{
         width: 40%;
-        line-height: 2rem;
-        margin: 50px auto;
+        line-height: 2.3rem;
+        margin: 10px auto;
         font-size: 1.3rem
     }
 
+}
+
+/* AUTOSEVICES */
+
+.autoservice.container-sm{
+    width: 100%;
+    padding: 10px 0;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.autoservice h2 p{
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+
+.autoservice-images{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.autoservice img{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.autoservice-images span{
+    text-transform: uppercase;
+    color: var(--gray-dark);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.autoservice-images i{
+    color: var(--primary);
+    margin-right: 20px;
+}
+
+
+@media (min-width: 890px) {
+
+    .autoservice h2{
+        margin: 20px;
+    }
+
+     .autoservice p{
+         width: 50%;
+         margin: 0 auto;
+         margin-bottom: 15px;
+     }
+
+    .autoservice-services{
+        display: inline-flex;
+        flex-direction: row;
+        flex-shrink: 0;
+    }
+
+    .autoservice-images{
+        margin: 0 -53px;
+        padding: 0;
+    }
+
+    .autoservice-images i{
+        margin-right: 20px;
+    }
 }
