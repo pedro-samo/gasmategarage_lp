@@ -434,10 +434,10 @@ span{
 .feedbacks p{
     color: var(--light);
     width: 70%;
-    margin: 12px auto;
+    margin: 5px auto;
     font-size: 1.2rem;
     font-style: italic;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 .feedbacks span{
@@ -457,6 +457,7 @@ span{
     
     .feedbacks p{
         width: 40%;
+        line-height: 2rem;
         margin: 50px auto;
         font-size: 1.3rem
     }
