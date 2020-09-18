@@ -428,9 +428,11 @@ span{
     height: 300px;
     width: 100%;
     background-image: url(/imgs/feedbacks.png);
+    background-attachment: fixed;
     background-position: center;
-    height: 400px;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 400px;
     margin: 20px auto;
     text-shadow: 1px 1px 1px #000000;
 }
