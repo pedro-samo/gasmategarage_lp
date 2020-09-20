@@ -18,15 +18,6 @@ h1, h2, h, h4{
     color: var(--primary);
 }
 
-h2:after {
-    content: '';
-    display: block;
-    width: 120px;  
-    height: 2px;
-    background: var(--primary);
-    margin: 3px auto;
-  }
-
 h5{
     text-transform: uppercase;
     color: var(--gray-dark);
@@ -90,7 +81,7 @@ span{
     max-width: 20%;
 }
 
-.title-image h2{
+.title-image h1{
     text-align: center;
     line-height: 3rem;
     margin: 5px 10px;
@@ -113,7 +104,7 @@ span{
         max-width: 50%;
     }
     
-    .title-image h2{
+    .title-image h1{
         margin: 10px 50px;
         padding: 5px;
         font-size: 3rem;
@@ -134,13 +125,22 @@ span{
     padding: 5px;
 }
 
-.choose-us.title h3{
+.choose-us.title h2{
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 300;
     margin: 10px;
     color: var(--primary);
 }
+
+.choose-us.title h2:after {
+    content: '';
+    display: block;
+    width: 230px;  
+    height: 2px;
+    background: var(--primary);
+    margin: 5px auto;
+  }
 
 .choose-us img{
     margin: 0;
@@ -294,6 +294,15 @@ span{
     padding: 10px;
 }
 
+.car-brands h2:after {
+    content: '';
+    display: block;
+    width: 250px;  
+    height: 2px;
+    background: var(--primary);
+    margin: 5px auto;
+  }
+
 .car-brands.brands i{
     color: var(--primary);
 }
@@ -319,7 +328,7 @@ span{
 
     .serviced.serviced.container-sm{
         padding: 10px;
-        margin: 40px auto;
+        margin: 20px auto;
         display: flex;
         align-items: center;
         flex-direction:row;
@@ -362,6 +371,15 @@ span{
     padding: 10px;
     margin-top: 20px;
 }
+
+.services h2:after {
+    content: '';
+    display: block;
+    width: 180px;  
+    height: 2px;
+    background: var(--primary);
+    margin: 5px auto;
+  }
 
 .services-list{
     display: flex;
@@ -506,6 +524,15 @@ span{
     
 }
 
+.autoservice h2:after {
+    content: '';
+    display: block;
+    width: 270px;  
+    height: 2px;
+    background: var(--primary);
+    margin: 5px auto;
+  }
+
 .autoservice-images{
     margin: 10px auto;
     display: flex;
@@ -564,6 +591,15 @@ span{
     text-align: center;
     margin-top: 30px;
 }
+
+.main-title:after {
+    content: '';
+    display: block;
+    width: 160px;  
+    height: 2px;
+    background: var(--primary);
+    margin: 5px auto;
+  }
 
 .main-title{
     padding: 10px;
@@ -717,4 +753,20 @@ span{
     #msg-box-text{
         text-align: right;
     }
+}
+
+#copyright{
+    text-align: center;
+    padding: 5px;
+    font-size: 10px !important;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    font: var(--gray-dark);
+}
+
+#copyright span{
+    font-size: 13px;
+    transition: all .6s;
 }
