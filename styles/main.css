@@ -68,7 +68,7 @@ span{
 .title-image{
     background-image: url(/imgs/carousel1.png);
     background-position: center;
-    height: 700px;
+    height: 70vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
