@@ -261,7 +261,7 @@ span{
 /* BRANDS SERVICED */
 
 .serviced.container-sm{
-    padding: 0;
+    padding: 10px;
     margin: 0px auto;
 }
 
@@ -359,7 +359,7 @@ span{
 /* OUR SERVICES */
 
 .services{
-
+    margin: 20px auto;
     padding: 10px;
     align-content: center;
     align-items: center;
@@ -450,7 +450,7 @@ span{
 
 
 .feedbacks{
-    padding: 0 10px;
+    padding: 10px;
     overflow: hidden;
     width: 100%;
     background-image: url(/imgs/feedbacks.png);
@@ -545,15 +545,19 @@ span{
 }
 
 .autoservice-images span{
+    margin: -5px auto;
     text-transform: uppercase;
     color: var(--gray-dark);
     font-weight: 400;
+    width: 80%;
+    padding: 0 40px;
     font-size: 1.4rem;
+    background-color: #c9c9c9;
 }
 
 .autoservice-images i{
     color: var(--primary);
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 
