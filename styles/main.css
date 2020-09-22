@@ -644,48 +644,22 @@ span{
 }
 
 
-/* SLICE */
+/* INSTAGRAM */
 
-#slice{
-    margin-top: 20px;
-    margin-bottom: 50px;
-    width: 100%;
+.instagram h2{
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
 }
 
-#slice1{
-    width: 100%;
-    background-image: url(/imgs/slice1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-
-}
-#slice2{
-    width: 100%;
-    background-image: url(/imgs/slice2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-
-}
-#slice3{
-    width: 100%;
-    background-image: url(/imgs/slice3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-}
-#slice4{
-    width: 100%;
-    background-image: url(/imgs/slice4.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-}
+.instagram h2:after {
+    content: '';
+    display: block;
+    width: 270px;  
+    height: 2px;
+    background: var(--primary);
+    margin: 5px auto;
+  }
 
 /* FOOTER */
 
