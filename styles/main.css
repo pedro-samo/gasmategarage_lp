@@ -4,6 +4,7 @@
     --primary: #4c9df3;
     --gray: #a1a4a7;
     --gray-dark: #101113;
+    --medium-dark: #343a40;
 }
 
 i {
@@ -180,7 +181,7 @@ span {
 .localization {
     height: 500px;
     font-weight: 300;
-    background-color: rgb(243, 243, 243);
+    background-color: var(--medium-dark);
     margin: 20px auto 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -639,7 +640,7 @@ span {
 
 .footer.container-fluid {
     text-align: center;
-    background-color: var(--gray-dark);
+    background-color: var(--medium-dark);
     margin: 50px auto 0;
     padding: 15px;
     bottom: 0;
@@ -713,8 +714,7 @@ span {
     bottom: 0;
     width: 100%;
     margin: 0;
-    background-color: black;
-    font: var(--gray-dark);
+    background-color: var(--gray-dark);
 }
 
 #copyright span {
