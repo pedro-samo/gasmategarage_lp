@@ -402,11 +402,11 @@ span {
 
 @media (min-width: 890px) {
     .services {
-        margin: 0px auto;
+        margin: 20px auto;
         padding: 0;
     }
     .services h2 {
-        margin: 20px;
+        margin: 20px 0 -20px;
     }
     .services.container p:nth-child(2) {
         max-width: 60%;
@@ -561,7 +561,7 @@ span {
 
 #contact-area {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .main-title:after {
