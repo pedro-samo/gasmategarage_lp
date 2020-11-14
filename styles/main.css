@@ -3,6 +3,7 @@
 :root {
     --primary: #4c9df3;
     --gray: #a1a4a7;
+    --gray-dark: #101113;
 }
 
 i {
@@ -29,7 +30,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--gray-dark);
 }
 
 p {
@@ -159,16 +160,17 @@ span {
 }
 
 @media (min-width: 891px) {
-    .choose-us.body {
-        flex-direction: row;
-        margin: 0;
-    }
-    .choose-us.engine {
-        margin: 0 20px;
-    }
     .choose-us.title p {
         margin: 0 auto;
         width: 60%;
+    }
+    .choose-us.body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 0;
+    }
+    .choose-us.engine {
+        margin: 0 20px;
     }
 }
 
