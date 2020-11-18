@@ -419,8 +419,15 @@ span {
         flex-wrap: wrap;
     }
     .services-list-itens {
-        margin: 0 auto;
+        margin: 0 auto 30px;
         width: 30%;
+    }
+
+    .services-list-itens.battery{
+        margin-right: -20px;
+    }
+    .services-list-itens.engine{
+        margin-left: -20px;
     }
 }
 
