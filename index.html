@@ -202,7 +202,7 @@
                             <i class="fas fa-envelope"></i>
                         </a>
                         <p>
-                            <span class="contact-tile">Send a e-mail</span> contact@gasmategarage.com
+                            <span class="contact-tile">Send a e-mail</span> contact@gasmategarage.com.au
                         </p>
                     </div>
                     <div class="col-md-4 contact-box">
@@ -270,10 +270,15 @@
 
                 <div class="col-md-4" id="msg-box">
                     <div class="col-md-3" id="contact-form">
-                        <form action="">
-                            <input type="email" class="form-control" placeholder="E-mail" name="email">
-                            <input type="text" class="form-control" placeholder="Subject" name="subject">
-                            <textarea class="form-control" rows="3" placeholder="Your message..." name="message"></textarea>
+                        <form action="https://formspree.io/f/xvovnrpg" method="POST">
+                            <label>
+                                Your email:
+                                <input type="text" class="form-control" placeholder="E-mail" name="_replyto">
+                              </label>
+                            <label>
+                                Your message:
+                                <textarea class="form-control" rows="3" placeholder="Your message..." name="message"></textarea>
+                              </label>
                             <input type="submit" class="main-btn" value="Send">
                         </form>
                     </div>
