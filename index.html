@@ -270,16 +270,13 @@
 
                 <div class="col-md-4" id="msg-box">
                     <div class="col-md-3" id="contact-form">
-                        <form action="https://formspree.io/f/xvovnrpg" method="POST">
-                            <label>
-                                Your email:
-                                <input type="text" class="form-control" placeholder="E-mail" name="_replyto">
-                              </label>
-                            <label>
-                                Your message:
-                                <textarea class="form-control" rows="3" placeholder="Your message..." name="message"></textarea>
-                              </label>
-                            <input type="submit" class="main-btn" value="Send">
+                        <form id="my-form" action="https://formspree.io/f/xvovnrpg" method="POST">
+                            <label>Email:</label>
+                            <input class="form-control" type="email" name="email" />
+                            <label>Message:</label>
+                            <input class="form-control" type="text" name="message" />
+                            <button id="my-form-button" class="main-btn" id="my-form-button">Submit</button>
+                            <p id="my-form-status"></p>
                         </form>
                     </div>
                 </div>
@@ -298,6 +295,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/js/bootstrap.js"></script>
+    <script src="/js/form.js"></script>
 </body>
 
 </html>

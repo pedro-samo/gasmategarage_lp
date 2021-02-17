@@ -694,6 +694,13 @@ span {
     background-color: #22313f;
 }
 
+#contact-form #my-form-status{
+    font-size: 14px;
+    white-space: nowrap;
+    color: #00aeff;
+    font-weight: 500;
+}
+
 @media (min-width: 890px) {
     .footer.container-fluid {
         text-align: left;
